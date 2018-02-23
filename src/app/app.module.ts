@@ -10,17 +10,18 @@ import {RegisterPage} from "../pages/register/register";
 import {LoginPage} from "../pages/login/login";
 import {AngularFireModule} from "angularfire2";
 import { AngularFireAuth } from 'angularfire2/auth';
+import {LoggedInPage} from "../pages/logged-in/logged-in";
 
 
 export const firebaseAuth = {
   production: false,
   firebase: {
-    apiKey: 'dfgs',
-    authDomain: 'dfg',
-    databaseURL: 'dfsg',
-    projectId: 'sdfg',
-    storageBucket: 'fdgs',
-    messagingSenderId: 'sdfg'
+    apiKey: 'AIzaSyC1542p-k5rGtHpSsCqZHiXaWrtdmaEOpU',
+    authDomain: 'test-ionic-app-a52a6.firebaseapp.com',
+    databaseURL: 'https://test-ionic-app-a52a6.firebaseio.com',
+    projectId: 'test-ionic-app-a52a6',
+    storageBucket: '',
+    // messagingSenderId: 'sdfg'
   }
 };
 
@@ -29,7 +30,8 @@ export const firebaseAuth = {
     MyApp,
     HomePage,
     RegisterPage,
-    LoginPage
+    LoginPage,
+    LoggedInPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ export const firebaseAuth = {
     MyApp,
     HomePage,
     RegisterPage,
-    LoginPage
+    LoginPage,
+    LoggedInPage
   ],
   providers: [
     StatusBar,

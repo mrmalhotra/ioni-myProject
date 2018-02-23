@@ -29,7 +29,7 @@ export class RegisterPage {
   registerUser(){
     console.log('in register user')
     this.fire.auth.createUserWithEmailAndPassword(this.uname.value,this.pass.value).then(data=>{
-
+    console.log('got the data ',data)
     }).catch(err=>console.log('checking an error ',err));
   }
 }

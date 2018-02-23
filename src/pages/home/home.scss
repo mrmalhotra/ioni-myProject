@@ -1,0 +1,10 @@
+page-home {
+      #homeButton {
+        display: flex;
+        flex-direction: row;
+      }
+
+  #homeButton button {
+    flex:1;
+  }
+}
